@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Vishwakarma — Cloud & Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Vishal Vishwakarma — B.Tech CSE Student, Microsoft Azure & AWS Cloud Learner, Full-Stack Developer." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' };</script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 antialiased transition-colors">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 bg-white/85 dark:bg-slate-950/85 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="#top" class="font-extrabold text-lg tracking-tight text-[#0B2240] dark:text-white">Vishal<span class="text-indigo-600">.dev</span></a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#cloud" class="hover:text-indigo-600">Cloud & DevOps</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="theme-btn" onclick="toggleTheme()" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-sm">🌙</button>
+        <a href="https://unitedbot.duckdns.org" target="_blank" rel="noopener" class="px-3.5 py-2 rounded-xl bg-[#0B2240] hover:bg-[#13325c] text-white text-xs font-semibold">Live Project ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="max-w-5xl mx-auto px-4 pt-16 pb-12 md:pt-24 md:pb-16">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-xs font-semibold mb-5">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      B.Tech CSE (AKTU) • United College, Prayagraj
+    </div>
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+      Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">Vishal Vishwakarma</span>
+    </h1>
+    <p class="mt-4 text-base md:text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
+      Cloud & Full-Stack Developer building and deploying production web applications with <strong>Microsoft Azure, Ubuntu Linux, PostgreSQL, Node.js, and Nginx</strong>.
+    </p>
+    <div class="mt-7 flex flex-wrap gap-3">
+      <a href="#projects" class="px-5 py-3 rounded-xl bg-[#0B2240] hover:bg-[#13325c] text-white font-semibold text-sm shadow-lg shadow-indigo-500/20 transition">View Live Projects</a>
+      <a href="https://github.com/vishalvishwa8082-stack" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold text-sm transition">GitHub Profile ↗</a>
+      <a href="https://builder.aws.com/community/@vishal8082" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold text-sm transition">AWS Builder Center ↗</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto px-4 py-8">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 md:p-8 shadow-sm">
+      <h2 class="text-xl font-bold mb-3">About Me</h2>
+      <p class="text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+        I'm a B.Tech Computer Science & Engineering student at <strong>United College of Engineering & Research, Prayagraj</strong> (Class of 2029). I specialize in end-to-end deployment — from designing relational PostgreSQL schemas and REST APIs to provisioning cloud VMs on Microsoft Azure, configuring Nginx reverse proxies, and automating HTTPS SSL certificates.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section id="projects" class="max-w-5xl mx-auto px-4 py-8">
+    <div class="mb-6">
+      <h2 class="text-2xl font-extrabold">Featured Project</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400">Deployed live on Microsoft Azure with HTTPS</p>
+    </div>
+
+    <div class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-lg grid md:grid-cols-12">
+      <div class="md:col-span-5 bg-gradient-to-br from-[#0B2240] via-indigo-900 to-blue-800 text-white p-7 flex flex-col justify-between">
+        <div>
+          <span class="px-2.5 py-1 rounded-full bg-white/15 text-[11px] font-bold uppercase tracking-wider">Live on Azure Cloud</span>
+          <h3 class="text-2xl font-extrabold mt-4 leading-snug">College Management AI Chatbot & AKTU Portal</h3>
+          <p class="text-xs text-blue-100 mt-2 leading-relaxed">
+            Full-stack college portal with natural-language AI chatbot, role-based access control, and real PostgreSQL academic records.
+          </p>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <a href="https://unitedbot.duckdns.org" target="_blank" rel="noopener" class="px-4 py-2 rounded-xl bg-white text-[#0B2240] font-bold text-xs hover:bg-blue-50 transition">Open Live App ↗</a>
+          <a href="https://github.com/vishalvishwa8082-stack/college-chatbot" target="_blank" rel="noopener" class="px-4 py-2 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-xs transition">Source Code</a>
+        </div>
+      </div>
+
+      <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-between space-y-5">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Key Highlights</h4>
+          <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+            <li>• <strong>Role-Based Portals:</strong> Separate 3-column access for Students, Teachers, and Admin with Captcha & College ID authentication.</li>
+            <li>• <strong>Admin Governance:</strong> Pending registration approval workflow, secret Admin profile controls, and live module permission toggles.</li>
+            <li>• <strong>AKTU Academics:</strong> 1st–4th Year B.Tech subjects, interactive Attendance Sheet, Assignments, Library, Fees & Placement Opportunities.</li>
+            <li>• <strong>Cloud Deployment:</strong> Hosted on Ubuntu Linux VM (Azure), PostgreSQL 16, PM2 process manager, Nginx reverse proxy & Let's Encrypt SSL.</li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Node.js</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Express.js</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">PostgreSQL</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Tailwind CSS</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Azure VM</span>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-medium">Nginx & SSL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud & Deployment Experience -->
+  <section id="cloud" class="max-w-5xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-extrabold mb-6">Cloud & Deployment Experience</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div class="text-xs font-bold uppercase text-indigo-600 dark:text-indigo-400">Microsoft Azure</div>
+        <h3 class="font-bold text-base mt-1">Linux VM & Production Hosting</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+          Provisioned Ubuntu 24.04 LTS Virtual Machines, configured Network Security Groups (SSH/HTTP/HTTPS), PM2 24x7 process management, and automated Let's Encrypt SSL via Certbot.
+        </p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div class="text-xs font-bold uppercase text-amber-600 dark:text-amber-400">AWS & Community</div>
+        <h3 class="font-bold text-base mt-1">AWS Builder Center (@vishal8082)</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+          Active member of the AWS Builder community and GitHub Student Developer Pack, exploring cloud-native architectures, RDS, EC2, and full-stack automation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-5xl mx-auto px-4 py-8">
+    <h2 class="text-2xl font-extrabold mb-6">Technical Skills</h2>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div class="text-xl mb-2">☁️</div>
+        <h3 class="font-bold text-sm mb-2">Cloud & DevOps</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Microsoft Azure, AWS Fundamentals, Ubuntu Linux, Nginx, PM2, Certbot SSL, Git & GitHub</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div class="text-xl mb-2">⚙️</div>
+        <h3 class="font-bold text-sm mb-2">Backend & Database</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Node.js, Express.js, PostgreSQL, REST APIs, JWT Auth, Captcha & RBAC Security</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+        <div class="text-xl mb-2">🎨</div>
+        <h3 class="font-bold text-sm mb-2">Frontend & UI</h3>
+        <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">HTML5, Tailwind CSS, JavaScript, Responsive Mobile-First Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto px-4 pt-8 pb-16">
+    <div class="bg-[#0B2240] text-white rounded-3xl p-7 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div>
+        <h2 class="text-2xl font-extrabold">Let's Connect</h2>
+        <p class="text-sm text-blue-200 mt-1">Open to internships, campus tech collaborations, and cloud projects.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href="mailto:vishalvishwa8082@gmail.com" class="px-5 py-2.5 rounded-xl bg-white text-[#0B2240] font-bold text-sm hover:bg-blue-50 transition">Email Me</a>
+        <button onclick="copyEmail()" class="px-5 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-semibold text-sm transition" id="copy-btn">Copy Email</button>
+      </div>
+    </div>
+    <p class="text-center text-xs text-slate-400 mt-8">© 2026 Vishal Vishwakarma • Built & Deployed on Cloud</p>
+  </section>
+
+  <script>
+    if (localStorage.getItem('p_theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+      document.getElementById('theme-btn').textContent = '☀️';
+    }
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('p_theme', isDark ? 'dark' : 'light');
+      document.getElementById('theme-btn').textContent = isDark ? '☀️' : '🌙';
+    }
+    function copyEmail() {
+      navigator.clipboard?.writeText('vishalvishwa8082@gmail.com');
+      const btn = document.getElementById('copy-btn');
+      btn.textContent = 'Copied ✅';
+      setTimeout(() => btn.textContent = 'Copy Email', 2500);
+    }
+  </script>
+</body>
+</html>
